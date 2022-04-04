@@ -56,84 +56,84 @@ public class Runner {
 //		System.out.println(numToCheck + " is " + res + "the range " + startRange + " to " + endRange);
 
 		// Show the number of days in month
-		final int MIN_MONTH = 1, MAX_MONTH = 12, MIN_YEAR = 0, LEAP_YEAR = 4;
-		int month, year, res = 0;
-		boolean isLeapYear;
-		String nameOfMonth = "";
-
-		System.out.println("Year: ");
-		year = scanner.nextInt();
-		System.out.println("Month: ");
-		month = scanner.nextInt();
-
-		if (year > MIN_YEAR) {
-			isLeapYear = (year % LEAP_YEAR == 0) ? true : false;
-			if (month >= MIN_MONTH && month <= MAX_MONTH) {
-				switch (month) {
-				case 1:
-				case 3:
-				case 5:
-				case 7:
-				case 8:
-				case 11:
-				case 12:
-					res = 31;
-					break;
-
-				case 2:
-					res = (isLeapYear) ? 29 : 28;
-					break;
-
-				default:
-					res = 30;
-					break;
-				}
-
-				switch (month) {
-				case 1:
-					nameOfMonth = "January";
-					break;
-				case 2:
-					nameOfMonth = "February";
-					break;
-				case 3:
-					nameOfMonth = "March";
-					break;
-				case 4:
-					nameOfMonth = "April";
-					break;
-				case 5:
-					nameOfMonth = "May";
-					break;
-				case 6:
-					nameOfMonth = "June";
-					break;
-				case 7:
-					nameOfMonth = "July";
-					break;
-				case 8:
-					nameOfMonth = "August";
-					break;
-				case 9:
-					nameOfMonth = "September";
-					break;
-				case 10:
-					nameOfMonth = "October";
-					break;
-				case 11:
-					nameOfMonth = "Novenber";
-					break;
-				case 12:
-					nameOfMonth = "December";
-					break;
-				}
-
-				System.out.println(nameOfMonth + " " + year + " has " + res + " days");
-
-			} else
-				System.out.println("Invalid month value");
-		} else
-			System.out.println("Invalid year value");
+//		final int MIN_MONTH = 1, MAX_MONTH = 12, MIN_YEAR = 0, LEAP_YEAR = 4;
+//		int month, year, res = 0;
+//		boolean isLeapYear;
+//		String nameOfMonth = "";
+//
+//		System.out.println("Year: ");
+//		year = scanner.nextInt();
+//		System.out.println("Month: ");
+//		month = scanner.nextInt();
+//
+//		if (year > MIN_YEAR) {
+//			isLeapYear = (year % LEAP_YEAR == 0) ? true : false;
+//			if (month >= MIN_MONTH && month <= MAX_MONTH) {
+//				switch (month) {
+//				case 1:
+//				case 3:
+//				case 5:
+//				case 7:
+//				case 8:
+//				case 11:
+//				case 12:
+//					res = 31;
+//					break;
+//
+//				case 2:
+//					res = (isLeapYear) ? 29 : 28;
+//					break;
+//
+//				default:
+//					res = 30;
+//					break;
+//				}
+//
+//				switch (month) {
+//				case 1:
+//					nameOfMonth = "January";
+//					break;
+//				case 2:
+//					nameOfMonth = "February";
+//					break;
+//				case 3:
+//					nameOfMonth = "March";
+//					break;
+//				case 4:
+//					nameOfMonth = "April";
+//					break;
+//				case 5:
+//					nameOfMonth = "May";
+//					break;
+//				case 6:
+//					nameOfMonth = "June";
+//					break;
+//				case 7:
+//					nameOfMonth = "July";
+//					break;
+//				case 8:
+//					nameOfMonth = "August";
+//					break;
+//				case 9:
+//					nameOfMonth = "September";
+//					break;
+//				case 10:
+//					nameOfMonth = "October";
+//					break;
+//				case 11:
+//					nameOfMonth = "Novenber";
+//					break;
+//				case 12:
+//					nameOfMonth = "December";
+//					break;
+//				}
+//
+//				System.out.println(nameOfMonth + " " + year + " has " + res + " days");
+//
+//			} else
+//				System.out.println("Invalid month value");
+//		} else
+//			System.out.println("Invalid year value");
 
 		scanner.close();
 	}
