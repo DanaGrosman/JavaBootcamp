@@ -1,4 +1,4 @@
-package javabootcamp.basic.new_input;
+package javabootcamp.basic.user_input;
 
 import java.util.Scanner;
 
@@ -30,24 +30,24 @@ public class Runner {
 //				+ (numOfExpensiceAdds*EXPENSIVE_ADD_PRICE)));
 
 		// Q3: Calculating the cost of transporting furniture
-		final int MILE_PRICE = 5;
-		final int FLOOR_PRICE = 1;
-		final float TIP_PERCENT = 0.1f;
-		int furniturePrice, furnitureWeight, floor, mile, transportPrice;
-
-		System.out.println("Enter the price of the furniture: ");
-		furniturePrice = scanner.nextInt();
-		System.out.println("Enter the weight of the furniture: ");
-		furnitureWeight = scanner.nextInt();
-		System.out.println("Enter the floor: ");
-		floor = scanner.nextInt();
-		System.out.println("Enter the mile from the store: ");
-		mile = scanner.nextInt();
-
-		transportPrice = (int) (furniturePrice + (mile * MILE_PRICE) 
-				+ (furnitureWeight * FLOOR_PRICE * floor) + (furniturePrice * TIP_PERCENT));
-
-		System.out.println("The cost of transporting is: " + transportPrice);
+//		final int MILE_PRICE = 5;
+//		final int FLOOR_PRICE = 1;
+//		final float TIP_PERCENT = 0.1f;
+//		int furniturePrice, furnitureWeight, floor, mile, transportPrice;
+//
+//		System.out.println("Enter the price of the furniture: ");
+//		furniturePrice = scanner.nextInt();
+//		System.out.println("Enter the weight of the furniture: ");
+//		furnitureWeight = scanner.nextInt();
+//		System.out.println("Enter the floor: ");
+//		floor = scanner.nextInt();
+//		System.out.println("Enter the mile from the store: ");
+//		mile = scanner.nextInt();
+//
+//		transportPrice = (int) (furniturePrice + (mile * MILE_PRICE) 
+//				+ (furnitureWeight * FLOOR_PRICE * floor) + (furniturePrice * TIP_PERCENT));
+//
+//		System.out.println("The cost of transporting is: " + transportPrice);
 
 		scanner.close();
 	}
