@@ -121,7 +121,7 @@ public class Runner {
 //					nameOfMonth = "October";
 //					break;
 //				case 11:
-//					nameOfMonth = "Novenber";
+//					nameOfMonth = "November";
 //					break;
 //				case 12:
 //					nameOfMonth = "December";
@@ -134,6 +134,82 @@ public class Runner {
 //				System.out.println("Invalid month value");
 //		} else
 //			System.out.println("Invalid year value");
+
+		// Chapter 3 Q3:
+//		final int MIN_TRAVEL_TIME = 50, MIN_INNTRODUCTORT_TIME = 3;
+//		int familyMember = -1, closeFriends = -1, travelTime = 0, checkAmount = 0, introducTime = 0;
+//		boolean checkInfo = false;
+//
+//		while (!checkInfo) {
+//			while (familyMember != 0 && familyMember != 1) {
+//				System.out.println("Family member? type 1 - yes / 0 - no");
+//				familyMember = scanner.nextInt();
+//			}
+//			while (closeFriends != 0 && closeFriends != 1) {
+//				System.out.println("Close friends? type 1 - yes / 0 - no");
+//				closeFriends = scanner.nextInt();
+//			}
+//
+//			System.out.print("Travel time: ");
+//			travelTime = scanner.nextInt();
+//
+//			System.out.print("Introductory time: ");
+//			introducTime = scanner.nextInt();
+//
+//			checkInfo = true;
+//		}
+//
+//		if (familyMember == 0) { // OTHER 250 || CLOSE FRIENDS 500
+//			if (introducTime > MIN_INNTRODUCTORT_TIME)
+//				checkAmount += 50;
+//			if (travelTime > MIN_TRAVEL_TIME)
+//				checkAmount -= 50;
+//			if (closeFriends == 1)
+//				checkAmount += 500;
+//			else
+//				checkAmount += 250;
+//		} else // Family Member
+//			checkAmount = 1000;
+//
+//		System.out.println("Check amount: " + checkAmount);
+
+		// Chapter 3 Q7:
+		final int MIN_TEST_GRADE = 54, MIN_AVERAGE_HOMEWORK = 80;
+		int testGrade = 0, averageHomework = 0, exercisesNum = 0;
+		float finalGrade = 0;
+		float percentOfExerxises = 0.0f;
+		
+		System.out.println("Test grade: (0-100)");
+		testGrade = scanner.nextInt();
+		System.out.println("Average homework grades: (0-100)");
+		averageHomework = scanner.nextInt();
+		System.out.println("Exercises num: (0-8)");
+		exercisesNum = scanner.nextInt();
+		
+		switch (exercisesNum) {
+		case 5:
+		case 6:
+			if (testGrade > MIN_TEST_GRADE)
+				percentOfExerxises = 0.2f;
+			break;
+		case 7:
+		case 8:
+			if (testGrade > averageHomework)
+				break;
+			if (testGrade <= MIN_TEST_GRADE)
+				if (averageHomework >= MIN_AVERAGE_HOMEWORK)
+					percentOfExerxises = 0.25f;
+				else
+					percentOfExerxises = 0.2f;
+			else
+				percentOfExerxises = 0.3f;
+		}
+
+		if (exercisesNum > 4)
+			finalGrade = (float) ((averageHomework * percentOfExerxises) 
+					+ (testGrade * (1 - percentOfExerxises)));
+
+		System.out.println("Final grade: " + finalGrade);
 
 		scanner.close();
 	}

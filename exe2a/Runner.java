@@ -33,17 +33,17 @@ public class Runner {
 //		System.out.println("Digits is" + res + " equals");
 
 		// Chapter 2A Q5
-		int num;
-		String res;
-		System.out.println("Enter a number: ");
-		num = scanner.nextInt();
-
-		if ((num / 10) + 1 == num % 10) {
-			res = "Consecutive ";
-		} else
-			res = "Non-consecutive ";
-
-		System.out.println(res + "digits");
+//		int num;
+//		String res;
+//		System.out.println("Enter a number: ");
+//		num = scanner.nextInt();
+//
+//		if ((num / 10) + 1 == num % 10) {
+//			res = "Consecutive ";
+//		} else
+//			res = "Non-consecutive ";
+//
+//		System.out.println(res + "digits");
 
 		// Chapter 2A Q7
 //		final float MIN_PRECENT = 0.15f;

@@ -7,14 +7,14 @@ public class Runner {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		// Q1: Calculate the circumference from give radius
+		// Chapter 1 Q1: Calculate the circumference from give radius
 //		System.out.println("Please enter a radius: ");
 //		float radius = scanner.nextFloat();
 //		float pi = 3.14f;
 //		float circ = 2 * pi * radius;
 //		System.out.printf("The Circumference is: %.2f", circ);
 
-		// Q2: Order toast
+		// Chapter 1 Q2: Order toast
 //		final int TOAST_PRICE = 12;
 //		final int CHEAP_ADD_PRICE = 2;
 //		final int EXPENSIVE_ADD_PRICE = 3;
@@ -29,7 +29,7 @@ public class Runner {
 //				+ (numOfCheapAdds*CHEAP_ADD_PRICE) 
 //				+ (numOfExpensiceAdds*EXPENSIVE_ADD_PRICE)));
 
-		// Q3: Calculating the cost of transporting furniture
+		// Chapter 1 Q3: Calculating the cost of transporting furniture
 //		final int MILE_PRICE = 5;
 //		final int FLOOR_PRICE = 1;
 //		final float TIP_PERCENT = 0.1f;
