@@ -18,4 +18,12 @@ public abstract class Doll extends Toy {
 		
 		dirtiness = 1;
 	}
+	
+	public int getDirtiness() {
+		return dirtiness;
+	}
+	
+	public void setDirtiness(int dirtiness) {
+		this.dirtiness = dirtiness;
+	}
 }

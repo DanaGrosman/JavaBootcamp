@@ -15,9 +15,10 @@ public class SoftDoll extends Doll {
 	@Override
 	public void play() {
 		System.out.println(this);
-		if (!isBroken() && (getGroupAge() == kid.getGroupAge()))
+		if (!isBroken() && (getGroupAge() == kid.getGroupAge())) {
 			System.out.println("SoftDoll is played by " + this.getKid());
-		else
+			setDirtiness(getDirtiness() + 1);
+		} else
 			System.out.println("SoftDoll can not be played");
 	}
 
