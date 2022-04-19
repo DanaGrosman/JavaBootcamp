@@ -50,13 +50,13 @@ public class Runner {
 			case 4:
 				return new Latte();
 			case 5:
-				return new Cola(90, 77, 15, false);
+				return new Cola();
 			case 6:
-				return new Sprite(120, 77, 15, true);
+				return new Sprite();
 			case 7:
-				return new Orange(100, 77, 15, true);
+				return new Orange();
 			case 8:
-				return new Apple(180, 77, 15, false);
+				return new Apple();
 			}
 			return null;
 		}

@@ -2,6 +2,11 @@ package javabootcamp.oop.vendingmechineexercise.classes;
 
 import javabootcamp.oop.vendingmechineexercise.runner.Runner.VendingMachine;
 
+/**
+ * This class describes an Cappuccino drink
+ * @author Dana Grosman
+ *
+ */
 public class Cappuccino extends Coffee {
 
 	protected final static int VOLUME = 110;
@@ -10,10 +15,16 @@ public class Cappuccino extends Coffee {
 	protected final static int NUM_OF_SPOONS = 1;
 	protected final static int NUM_OF_SHOTS = 2;
 
+	/**
+	 * Initializes a newly created Cappuccino object
+	 */
 	public Cappuccino() {
 		super(VOLUME, TEMPERTURE, PRICE, NUM_OF_SPOONS);
 	}
 
+	/**
+	 * This method produce a Cappuccino when the client chose that drink
+	 */
 	@Override
 	public void produce() {
 		System.out.println("-----------------");
@@ -26,6 +37,9 @@ public class Cappuccino extends Coffee {
 		VendingMachine.milkQtt -= (VOLUME - (NUM_OF_SHOTS * SHOT));
 	}
 
+	/**
+	 * This method returned the object as a string.
+	 */
 	@Override
 	public String toString() {
 		return "Cappuccino [numOfShots=" + NUM_OF_SHOTS + ", spoonsOfSuger=" + spoonsOfSuger + ", volume=" + volume

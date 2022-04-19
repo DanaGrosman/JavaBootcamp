@@ -1,16 +1,21 @@
 package javabootcamp.oop.vendingmechineexercise.classes;
 
-public abstract class ColdDrink extends Drink{
+/**
+ * 
+ * @author Dana Grosman This class is abstract and describes a cold drink Cold
+ *         drink can be apple juice, orange juice, cola or sprite
+ */
+public abstract class ColdDrink extends Drink {
 
-	public ColdDrink(int volume, int tempertire, float price) {
-		super(volume, tempertire, price);
-	}
-
-	@Override
-	void setTemperature(int temperature) {
-		if (temperature >= 2 && temperature <= 5)
-			this.temperature = temperature;
-		else
-			this.temperature = 2;		
+	/**
+	 * Initializes a newly created ColdDrink object
+	 * 
+	 * @param volume      - between 50cc to 200cc
+	 * @param tempertaure - preferred drink temperature, ColdDrink temperature can
+	 *                    be 2 to 5 degrees
+	 * @param price       - drink price
+	 */
+	public ColdDrink(int volume, int tempertaure, float price) {
+		super(volume, tempertaure, price);
 	}
 }
